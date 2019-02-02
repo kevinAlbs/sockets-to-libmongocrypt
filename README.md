@@ -1,12 +1,12 @@
 An example of having PyMongo passing sockets down to libmongocrypt.
 
-Try it:
+Try it (with a mongod running):
 ```
-$ git clone https://github.com/kevinAlbs/sockets-to-libmongocrypt
+$ git clone git@github.com:kevinAlbs/sockets-to-libmongocrypt.git
 $ cd sockets-to-libmongocrypt
-$ # create a virtual environment for python 3
 $ python3 -m venv ./venv
 $ . ./venv/bin/activate
+$ pip install pymongo
 $ python setup.py install
 $ python pymongo-caller.py
 ismaster response:
